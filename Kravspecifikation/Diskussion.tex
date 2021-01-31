@@ -1,0 +1,18 @@
+\subsection{Diskussion (Jens)}
+%Afsnittet afsluttes med en kort diskussion, hvor, for eksempel, uklarheder i oplægget %diskuteres, og hvor der gøres rede for valg og afgrænsninger.
+
+\subsubsection{Uklarheder i oplæg}
+\begin{itemize}
+    \item \textit{"Der skal være faste aktiviteter for registrering af ting som ferie, sygdom, kurser med videre, som ikke kan pålignes det enkelte projekt."} - Det er her uklart hvad der menes med faste aktiviteter for registrering. Er det registreringen af fx. sygdom som er selve aktiviteten, eller er den status: at være syg, en aktivitet? Er aktiviteten fast som i altid aktiv, og med hensyn til forrige sætning; betyder det at medarbejdere jævnt skal registrere sig, eller at de altid skal have en bestemt status registreret? Vi har valgt at fortolke det som at det at være syg er en aktivitet i sig selv. Grupperet sammen med ferie, normal og andet fravær har vi valgt at kalde disse statusaktiviteter. 
+    
+    \item \textit{"Medarbejderne skal dagligt registrere hvor meget tid de har brugt på de forskellige aktiviteter"} - Det er her uklart hvad der menes med \textit{\textbf{skal}}. Er hensigten at det fra systemets side, skal være umuligt for en medarbejder at benytte det og samtidig ikke anføre et timeantal? Eller menes der blot et forsøg på at reducere mængden af medarbejdere der glemmer at anføre deres brugte antal timer? Vi har valgt at fortolke det som det sidste, dvs at systemet ikke forcere brugeren til at angive antal arbejdstimer for hver dag. Systemet anbefaler det med påmindelser og gør det nemt og tilgængeligt for medarbejderen at gøre, men det er ikke et krav.
+    
+    \item \textit{"Det skal være enkelt at foretage denne registrering, så medarbejderen ikke føler det er en byrde"} - Det er her uklart hvad der menes med \textit{\textbf{enkelt}} og \textit{\textbf{byrde}}. Vi har valgt at fortolke dette som at det maksimalt må tage 3 museklik og 2 tastaturinput for medarbejderen at udføre processen. 
+    
+\end{itemize}
+
+
+\subsubsection{Valg og begrænsning} 
+På baggrund af vores fortolkning af den \textit{enkle} brugeroplevelse, har vi valgt at implementere programmet med en grafisk brugerflade. Dette gør, at brugeren hurtigt kan sætte sig ind i sine muligheder. For at sikre os, at en medarbejder ikke tilskriver timer til en anden bruger end dem selv, har vi valgt at en bruger skal indtaste sine initialer før de kan indskrive timeantal.
+
+Vi har valgt at implementere andre aktiviteter som en status tilført medarbejder. Derudover bliver der oprettet en ny aktivitet til den enkelte medarbejder, der indeholder tidsrummet hvorved statussen var relevant. F.eks. hvis en medarbejder melder sig syg, bliver der oprettet en aktivitet, der specificerer hvornår denne medarbejder var syg. Derudover bliver medarbejderen tilskrevet som at være syg, og får derfor ikke nogle timer at allokere i timeregistreringen.

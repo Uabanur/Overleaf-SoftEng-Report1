@@ -1,0 +1,183 @@
+\subsection{Use cases (Roar)}
+
+%Dette afsnit skal give en beskrivelse af de væsentlige operationer i form af et (eller flere) use case diagrammer og detaljeret use cases med hoved–og alternative/fejl scenarier. Der skal være mindst 4 detaljeret use cases for to-mandsgrupper, 6 for tremandsgrupper og 8 for firmandsgrupper. Benyt samme skabelon som brugt i forbindelse med forelæsninger og øvelser. Udvalget af use caserne skal sker efter vigtigheden til brugeren.
+
+Når en bruger interagerer med programmet kan følgende scenarier forekomme. De viste \textit{use cases} er valgt på baggrund af vigtigheden for brugeren.
+
+\vspace{1 cm}
+
+\textbf{Navn:} Tjekke projektplan. 
+
+\textbf{Aktør:} Medarbejder.
+
+\textbf{Hovedscenarie: }
+
+\begin{itemize}
+    \item Brugeren vælger at tjekke projektplanen.
+    \item Systemet viser projektplanen for den gældende bruger.
+\end{itemize}
+
+\textbf{Alternativt scenarie:}
+
+\begin{itemize}
+    \item Brugeren har er ikke tilmeldt en aktivitet.
+    \item Systemet fortæller at brugeren ikke er tilmeldt nogle aktiviteter.
+\end{itemize}
+
+\vspace{1 cm}
+
+\textbf{Navn:} Statuskativitetstilmelding.
+
+\textbf{Aktør:} Medarbejder.
+
+\textbf{Hovedscenarie: }
+
+\begin{itemize}
+    \item Brugeren tilmelder sig syg/ferie/kursus/normal/andet fravær gennem aktiviteter.
+    \item Brugeren bliver afmeldt sin forhenværende statusaktivitet.
+    \item Systemet registrerer ændringen i brugerens status. 
+    \item Brugerens statusaktivitet bliver sat til det valgte.
+\end{itemize}
+
+\textbf{Alternativt scenarie:}
+
+\begin{itemize}
+    \item Brugeren tilmelder sig en status aktivitet han/hende allerede er tilmeldt.
+    \item Ingen ændring sker.
+\end{itemize}
+
+\vspace{1 cm}
+
+\textbf{Navn:} Melde timer på aktivitet
+
+\textbf{Aktør:} Medarbejder.
+
+\textbf{Forudsætning:} Brugeren er tilmeldt aktiviteten.
+
+\textbf{Hovedscenarie: }
+
+\begin{itemize}
+    \item Brugeren vælger den gældende aktivitet.
+    \item Brugeren vælger en dato
+    \item Brugeren indtaster hvor mange timer der er arbejdet den pågældende dag.
+    \item Systemet registrerer hvor mange timer brugeren har brugt denne dag.
+\end{itemize}
+
+\textbf{Alternativt scenarie:}
+
+\begin{itemize}
+    \item Brugeren har allerede tilmeldt timer for den gældende dag.
+    
+    \item Brugeren informerer hvor mange timer der er arbejdet.
+    \item Systemet overskriver hvor mange timer brugeren har brugt.
+\end{itemize}
+
+\vspace{1 cm}
+
+\textbf{Navn:} Anmode om medlemmer til aktiviteter.
+
+\textbf{Aktør:} Medarbejder.
+
+\textbf{Forudsætning:} Brugeren er tilmeldt aktiviteten.
+    
+\textbf{Hovedscenarie: }
+    
+\begin{itemize}
+    \item Brugeren vælger den gældende aktivitet.
+    \item Brugeren anmoder om hvem der skal tilmeldes aktiviteten.
+    \item Projektlederen tilmelder den gældende bruger til aktiviteten.
+\end{itemize}
+
+\textbf{Alternativt scenarie:}
+
+\begin{itemize}
+    \item Projektlederen vælger ikke at tilmelde den gældende bruger til aktiviteten.
+    
+    \item Den gældende bruger bliver ikke tilmeldt aktiviteten.
+\end{itemize}
+
+\vspace{1 cm}
+
+\textbf{Navn:} Tilføje medlemmer til projekt
+
+\textbf{Aktør:} Projektleder.
+
+\textbf{Hovedscenarie: }
+    
+\begin{itemize}
+    \item Projektlederen vælger hvilke medarbejdere der skal tilføjes.
+    \item Projektlederen tilføjer de valgte medarbejdere.
+    \item Systemet registrerer at alle valgte medarbejdere er tilføjet til projektet.
+\end{itemize}
+
+\textbf{Alternativt scenarie:}
+
+\begin{itemize}
+    \item En valgt medarbejder er allerede med i projektet.
+        \item Den omtalte medarbejder forbliver i projektet.
+\end{itemize}
+
+\vspace{1 cm}
+
+\textbf{Navn:} Tilføje medlemmer til aktivitet.
+
+\textbf{Aktør:} Projektleder.
+
+\textbf{Hovedscenarie: }
+    
+\begin{itemize}
+    \item Projektlederen vælger hvilke medarbejdere der skal tilføjes.
+    \item Projektlederen tilføjer de valgte medarbejdere.
+    \item Systemet registrerer at alle valgte medarbejdere er tilføjet til aktiviteten.
+\end{itemize}
+
+\textbf{Alternativt scenarie:}
+
+\begin{itemize}
+    \item En valgt medarbejder er allerede med i aktiviteten.
+    
+        \item Den omtalte medarbejder forbliver i aktiviteten.
+    
+\end{itemize}
+
+\vspace{1 cm}
+
+\textbf{Navn:} Valg af projektleder
+
+\textbf{Aktør:} Medarbejder.
+
+\textbf{Forudsætning: } Brugeren er opretteren af projektet.
+
+\textbf{Hovedscenarie: }
+    
+\begin{itemize}
+    \item Brugeren vælger hvilken medarbejder der er projektleder.
+    \item Den valgte medarbejder er registreret som projektleder.
+\end{itemize}
+
+\textbf{Alternativt scenarie:}
+
+\begin{itemize}
+    \item Den valgte medarbejder er ikke medlem af projektet.
+    \item Medarbejderen bliver tilføjet til projektet og gjort til projektleder.
+\end{itemize}
+
+\vspace{1 cm}
+
+\textbf{Navn:} Ændring af status
+
+\textbf{Aktør:} Medarbejder.
+
+\textbf{Hovedscenarie: }
+    
+\begin{itemize}
+    \item Brugeren vælger hvilket status han/hun har.
+    \item Systemet registrer brugerens nye status ved at oprette en statusaktivitet.
+\end{itemize}
+
+\textbf{Alternativt scenarie:}
+
+\begin{itemize}
+    \item Brugeren har allerede den anmodede status.
+    \item Brugeren beholder den givne status.
+\end{itemize}

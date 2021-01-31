@@ -1,0 +1,22 @@
+\subsection{Klassediagram (Mikkel)}
+%Dette klassediagram skal være bindeledet mellem kravspecifikation og program. Klasserne skal indeholde væsentlige attributter og operationer med typer, således at det fremgår hvordan de væsentlige begreber modelleres og samtidigt skal diagrammet give et overblik over programdesign.\\
+
+For bedre at danne et overblik over sammenhængen mellem klasser, samt hvad de enkelte klasser indeholder, tegnede vi et klassediagram. Dette kan ses i figur \ref{fig:classDiagram}.
+
+%MIKEKEL
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Figurer/SoftEng1ClassDiagram.png}
+    \caption{Klassediagram over programmet. Et par væsentlige variable er blevet fremhævet fra hver af klasserne. Nogle af klasserne har ingen variable fremhævet, da der her ikke var noget mærkværdigt at fremhæve.}
+    \label{fig:classDiagram}
+\end{figure}
+
+I klassediagrammet er der undladt at beskrive metoder. Vi vil derfor beskrive nogle væsentlige af disse i dette afsnit.
+\begin{itemize}
+    \item \textbf{Opret projekt:} Køres fra en medarbejder. Denne opretter et nyt projekt, og tilføjer denne til listen over projekter. Medarbejderen der oprettede det nye projekt vil automatisk blive tilskrevet som projektleder til denne. Under oprettelsen kan der dog designeres en anden medarbejder til at være projektleder.
+    
+    \item \textbf{Registrér timer:} En medarbejder kan registrere timer arbejdet på et bestemt projekt gennem den grafiske brugerflade. I programmet fungerer dette ved en funktion der bliver kørt fra medarbejdere, der tager en aktivitet og antal timer som argument. Timerne bliver så tilskrevet projektet, og aktiviteten opdateres.
+    
+    \item \textbf{Søg assistance:} En medarbejder kan søge assistance hos en anden medarbejder. Dette sker ved en funktion der køres fra medarbejderen, hvorved den anden medarbejder bruges som argument. Den anden medarbejder kan nu derfor melde sin tid på det projekt som der bliver søgt assistance på, og derved få tilskrevet sin tid.
+    
+\end{itemize}

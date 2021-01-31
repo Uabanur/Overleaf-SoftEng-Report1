@@ -1,0 +1,8 @@
+\subsection{Diskussion (Mikkel)}
+%Afsnittet afsluttes med en kort diskussion hvor der, for eksempel, gøres rede for de valg der er truffet. Afsnittet kan også omtale valg af algoritmer og datastrukturer. Slidserne i uge 5 anbefaler en process som kan bruges til at lave programdesign.
+
+Under implementationen valgte vi at tage udgangspunkt i Model-View-Control (MVC) designmønsteret. Dette blev gjort for at lave overskuelighed mellem hvad brugeren interagerer med, og den interne logik. En fordel ved MVC designmønstret er også fleksibiliteten i hvert del af designmønstret, hvilket er hensigtsmæssigt med hensyn til debugging. 
+
+Vi har valgt at bruge enumerated typer til at holde styr på visse aspekter undervejs i designet, såsom en medarbejders status. Dette blev gjort for nemt at kunne redigere status for en medarbejder, uden at skulle f.eks. sanitere input.
+
+Flere klasser indeholder hinanden begge veje, såsom medarbejdere der har tildelte aktiviteter, og aktiviteter der har tildelte medarbejdere. Dette blev indført, så det passede bedst med hvad der var mest intuitivt. Den dobbelte hæftning gør det også nemmere at finde information ud fra det relevante objekt, såsom at finde alle medarbejdere der er tildelt et specifikt projekt.
